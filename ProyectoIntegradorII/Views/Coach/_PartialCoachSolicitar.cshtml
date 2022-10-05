@@ -1,0 +1,267 @@
+﻿@using ProyectoIntegradorII.Models.ModelosCustom
+@model ProyectoIntegradorII.Models.ModelosCustom.SoliCoach
+
+@{
+    var listado = new List<SelectListItem>()
+    {
+        new SelectListItem()
+        {
+            Text = "Seleccione una opción",
+            Value = "-1",
+            Selected = true,
+            Disabled = true
+        },
+        new SelectListItem()
+        {
+            Text = "Referencia Estrategica",
+            Value = "1"
+        },
+        new SelectListItem()
+        {
+            Text = "Coaching",
+            Value = "2"
+        }
+    };
+    var listado2 = new List<SelectListItem>()
+    {
+        new SelectListItem()
+        {
+            Text = "Seleccione una opción",
+            Value = "-1",
+            Selected = true,
+            Disabled = true
+        },
+        new SelectListItem()
+        {
+            Text = "Individual",
+            Value = "1"
+        },
+        new SelectListItem()
+        {
+            Text = "Paquete",
+            Value = "2"
+        }
+    };
+    var listado3 = new List<SelectListItem>()
+    {
+        new SelectListItem()
+        {
+            Text = "Seleccione una opción",
+            Value = "-1",
+            Selected = true,
+            Disabled = true
+        },
+        new SelectListItem()
+        {
+            Text = "1",
+            Value = "1"
+        },
+        new SelectListItem()
+        {
+            Text = "2",
+            Value = "2"
+        },
+        new SelectListItem()
+        {
+            Text = "3",
+            Value = "3"
+        },
+        new SelectListItem()
+        {
+            Text = "4",
+            Value = "4"
+        },
+        new SelectListItem()
+        {
+            Text = "5",
+            Value = "5"
+        },
+        new SelectListItem()
+        {
+            Text = "6",
+            Value = "6"
+        },
+        new SelectListItem()
+        {
+            Text = "7",
+            Value = "7"
+        },
+        new SelectListItem()
+        {
+            Text = "8",
+            Value = "8"
+        }
+    };
+    var listado4 = new List<SelectListItem>()
+    {
+        new SelectListItem()
+        {
+            Text = "Seleccione una opción",
+            Value = "-1",
+            Selected = true,
+            Disabled = true
+        },
+        new SelectListItem()
+        {
+            Text = "1",
+            Value = "1"
+        },
+        new SelectListItem()
+        {
+            Text = "2",
+            Value = "2"
+        },
+        new SelectListItem()
+        {
+            Text = "3",
+            Value = "3"
+        }
+    };
+
+    
+}
+
+<!-- Modal Solicitar-->
+<div id="mydiv">
+<div class="modal fade" id="modalSolicitarCoach" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="lineaxd">
+        <h5 class="modaltitulosoli" id="exampleModalLabel">SOLICITAR COACH</h5>
+      </div>
+      <div class="modal-body">
+@using(Html.BeginForm("SoliCoach","Coach", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div id="solicitarcoach">
+        <h2 class="h2modalcoach">Coach:</h2>
+            <h2 class="h2modalcoachnombre" asp-for="coach">@ViewBag.coach</h2>
+        <br />
+        <br />
+        <h2 class="h2modalcoachsesion">Tipo de Sesión:</h2>
+            <div class="modalcoachsesiondes">
+            @Html.DropDownList("ses", listado , new { @class = "p-1 ml-1 text-center rounded-pill select-add-placeholder dropdown-toggle dropdown-toggle-split" })
+            </div>
+        <br />
+        <br />
+        <h2 class="h2modalcoachservicio">Tipo de Servicio:</h2>
+            <div class="modalcoachserviciodes">
+            @Html.DropDownList("ser", listado2 , new { @class = "p-1 ml-1 text-center rounded-pill select-add-placeholder dropdown-toggle dropdown-toggle-split" })
+            </div>
+        <br />
+        <br />
+        <h2 class="h2modalprecio">Precio:</h2>
+            <div class="modalpreciodes">
+            USD @Html.TextBox("pre", (decimal)ViewBag.precio , new { @readonly="readonly", @class ="p-1 ml-1 rounded" })
+            </div>
+        <br />
+        <br />
+        <h2 class="h2modalcantsesiones">Cantidad de Sesiones:</h2>
+            <div class="modalcantsesionesdes">
+            @Html.DropDownList("cantses", listado3, new { @class = "p-1 ml-1 text-center rounded-pill select-add-placeholder dropdown-toggle dropdown-toggle-split" })
+            </div>
+        <br />
+        <br />
+        <h2 class="h2modalcanthoras">Cantidad de Horas:</h2>
+            <div class="modalcanthorasdes">
+            @Html.DropDownList("canthor", listado4, new { @class = "p-1 ml-1 text-center rounded-pill select-add-placeholder dropdown-toggle dropdown-toggle-split" })
+            </div>
+        <br />
+        <br />
+        <h2 class="h2modalcoachmonto">Monto:</h2>
+            <div class="modalcoachmontodes">
+            USD @Html.TextBox("mon", null , new { @readonly="readonly", type="number", @class ="p-1 ml-1 rounded" })
+            </div>
+        <br />
+        <br />
+        <div class="modal-footer">
+            <input style="text-shadow: black 0.1em 0.1em 0.2em;" type="submit" name="name" value="Siguiente" class="modalsoliaceptar" id="boton01"/>
+         @* <button type="submit" class="modalsoliaceptar" data-bs-toggle="modal" data-bs-target="#modalInsertarCliente" onclick="toggle(this)">Siguiente</button>*@
+            <button style="text-shadow: black 0.1em 0.1em 0.2em;" type="button" class="modalsolicancelar" data-bs-dismiss="modal" onClick = "cerrarModal()">Cancelar</button>
+        </div>
+    </div>
+}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+    $(document).ready(function()
+	{
+	$("#boton01").click(function () {
+        document.getElementById("ser").disabled = false;
+        document.getElementById("cantses").disabled = false;
+        document.getElementById("canthor").disabled = false;
+	    console.log(parseInt($("#ses").val()));
+        console.log(parseInt($("#ser").val()));
+        console.log(parseInt($("#pre").val()));
+        console.log(parseInt($("#cantses").val()));
+        console.log(parseInt($("#canthor").val()));
+        console.log(parseInt($("#mon").val()));
+	});
+});
+</script>
+
+<script>
+
+    //REGLA DE NEGOCIO INDIVIDUAL
+    $("#ser").change(function () {
+        if (document.getElementById('ser').value == "1") {
+            $("#cantses").val(1);
+            document.getElementById("cantses").disabled = true;
+            $("#canthor").val(1);
+            document.getElementById("canthor").disabled = true;
+        }
+        if (document.getElementById('ser').value == "2") {
+            document.getElementById("cantses").disabled = false;
+            document.getElementById("canthor").disabled = false;
+        }
+    });           
+   
+</script>
+<script>
+    $("#ses").change(function () {
+        if (document.getElementById('ses').value == "1") {
+            $("#ser").val(1);
+            document.getElementById("ser").disabled = true;
+            $("#cantses").val(1);
+            document.getElementById("cantses").disabled = true;
+            $("#canthor").val(1);
+            document.getElementById("canthor").disabled = true;
+        }
+        if (document.getElementById('ses').value == "2" && document.getElementById('ser').value == "1") {
+            document.getElementById("ser").disabled = false;
+            $("#cantses").val(1);
+            document.getElementById("cantses").disabled = true;
+            $("#canthor").val(1);
+            document.getElementById("canthor").disabled = true;
+        }
+        if (document.getElementById('ses').value == "2" && document.getElementById('ser').value == "2") {
+            document.getElementById("cantses").disabled = false;
+            document.getElementById("canthor").disabled = false;
+        }
+    });      
+</script>
+<script>
+
+    $(document).change(function(event){
+      //Capturo el valor de cantSesiones,cantHoras y precio
+      cantSesiones = $('#cantses').val();
+      cantHoras = $('#canthor').val();
+      precio = document.getElementById("pre").value;
+      //Compruebo si alguno de los tres está vacío
+      if(cantSesiones == "" || cantHoras == "" || precio == ""){
+        //A la variable resultado le asigno el valor 0
+        var resultado = 0;
+      }else{
+        //Si los tres ya tienen valor, hago operacion de los tres valores
+        var resultado = parseInt(precio) * parseInt(cantSesiones) * parseInt(cantHoras);
+      }
+      //Muestro el resultado
+        document.getElementById("mon").value = resultado;
+    });  
+
+</script>

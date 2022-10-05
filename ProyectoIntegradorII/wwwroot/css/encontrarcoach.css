@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@font-face {
+    font-family: lemon;
+    src: url('../fuentes/LEMONMILK-Regular.otf') format('truetype');
+}
+
+.bodyencontrarcoach {
+    margin: 0;
+    padding: 0;
+    background: url(https://i.imgur.com/qlkT19M.png) no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
+}
+
+.hcoach {
+    font-family: lemon;
+    color: white;
+    font-size: 35px;
+    margin-left: 440px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.h2coach {
+    font-family: lemon;
+    font-size: 15px;
+    color: white;
+    display: inline;
+    margin-left: 67px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.h2coach2 {
+    font-family: lemon;
+    font-size: 15px;
+    color: white;
+    display: inline;
+    margin-left: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.h2coach3 {
+    font-family: lemon;
+    font-size: 15px;
+    color: white;
+    display: inline;
+    margin-left: -5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.h2coach4 {
+    font-family: lemon;
+    font-size: 15px;
+    color: white;
+    display: inline;
+    margin-right: -120px;
+    margin-left: 118px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Select1 {
+    font-size: 15px;
+    display: inline;
+    margin: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Select2 {
+    font-size: 15px;
+    display: inline;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Select3 {
+    font-size: 15px;
+    display: inline;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Select4 {
+    font-size: 15px;
+    display: inline;
+    margin: 10px;
+    margin-left: 132px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.thcoach11 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: justify-all;
+}
+
+.thcoach12 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach13 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach14 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach15 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach16 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach21 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: justify-all;
+}
+
+.thcoach22 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.thcoach23 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach24 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach25 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thcoach26 {
+    font-family: lemon;
+    font-size: 12px;
+    text-align: center;
+}
+
+#encontrarcoachselect {
+    width: 700px;
+    margin-left: 390px;
+    margin-bottom: -10px;
+}
+
+.botonBuscar {
+    margin-left: 180px;
+    background-color: darkturquoise;
+    color: white;
+    font-size: 14px;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 22px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-right: 22px;
+    margin-bottom: -200px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+    .botonBuscar:hover {
+        margin-left: 180px;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 22px;
+        padding-top: 4px;
+        padding-bottom: 3px;
+        padding-right: 22px;
+        margin-bottom: -200px;
+        margin-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+.infCoach {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    border-width: medium;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+    .infCoach:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: -3px;
+        margin-bottom: -3px;
+    }
+
+.solicoach {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+    .solicoach:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        font-size: 14px;
+        color: white;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: -3px;
+        margin-bottom: -3px;
+    }
+
+.main-coach {
+    margin-left: -90px;
+    margin-right: -90px;
+}
+
+.paginacion {
+    margin-left: .25rem;
+    margin-right: .25rem;
+    border-radius: .25rem;
+    border: none;
+    min-width: 2.25rem;
+    text-align: center;
+    color: #4f5464;
+    background-color: #1d97c9;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modaltitulo {
+    font-family: lemon;
+    color: black;
+    margin-left: 130px;
+    font-size: 15px;
+    margin-bottom: -5px;
+    margin-top: -4px;
+}
+
+.modaltitulo2 {
+    font-family: lemon;
+    color: black;
+    margin-left: 130px;
+    font-size: 15px;
+    margin-bottom: -5px;
+    margin-top: -4px;
+}
+
+.modalcoach {
+    font-family: lemon;
+    color: black;
+    margin-left: 190px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -215px;
+}
+
+.modalpais {
+    font-family: lemon;
+    color: black;
+    margin-left: 180px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.modalidioma {
+    font-family: lemon;
+    color: black;
+    margin-left: 252px;
+    font-size: 15px;
+}
+
+.modaltelefono {
+    font-family: lemon;
+    color: black;
+    margin-left: 100px;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.modalnumtelefono {
+    font-family: lemon;
+    color: black;
+    margin-left: 290px;
+    font-size: 15px;
+    margin-top: -38px;
+}
+
+.modalcorreo {
+    font-family: lemon;
+    color: black;
+    margin-left: -20px;
+    font-size: 15px;
+}
+
+.modaldescorreo {
+    font-family: lemon;
+    color: black;
+    margin-left: 180px;
+    font-size: 14px;
+    margin-top: -2px;
+    margin-bottom: -30px;
+}
+
+.modalcertificacion {
+    font-family: lemon;
+    color: black;
+    margin-left: -250px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.modaldescertificacion {
+    font-family: lemon;
+    color: black;
+    margin-left: 220px;
+    font-size: 14px;
+    margin-top: -35px;
+}
+
+.modalmetodos {
+    font-family: lemon;
+    color: black;
+    margin-left: -250px;
+    font-size: 14px;
+}
+
+.modaldesmetodos1 {
+    font-family: lemon;
+    color: black;
+    margin-left: 220px;
+    font-size: 14px;
+    margin-top: -37px;
+}
+
+.modaldesmetodos2 {
+    font-family: lemon;
+    color: black;
+    margin-left: 220px;
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+.modaldesmetodos3 {
+    font-family: lemon;
+    color: black;
+    margin-left: 220px;
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+.modalespecialidad {
+    font-family: lemon;
+    color: black;
+    margin-left: -255px;
+    font-size: 14px;
+}
+
+.modaldesespecialidad {
+    font-family: lemon;
+    color: black;
+    margin-left: 215px;
+    font-size: 14px;
+    margin-top: -35px;
+}
+
+.modalexperiencia {
+    font-family: lemon;
+    color: black;
+    margin-left: -255px;
+    font-size: 14px;
+}
+
+.modaldesexperiencia {
+    font-family: lemon;
+    color: black;
+    margin-left: 210px;
+    font-size: 14px;
+    margin-top: -38px;
+    margin-bottom: -25px;
+}
+
+.modalcerrar {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-right: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .modalcerrar:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: -3px;
+        margin-right: 200px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.lineaxd {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #000000;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.h2modalcoach {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-left: 80px;
+}
+
+.h2modalcoachnombre {
+    font-family: lemon;
+    color: black;
+    margin-left: 190px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -22px;
+    margin-bottom: -25px;
+    margin-left: 110px;
+    margin-right: -100px;
+}
+
+.h2modalcoachsesion {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-left: 14px;
+}
+
+.h2modalcoachservicio {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-left: -1px;
+}
+
+.h2modalprecio {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 130px;
+}
+
+.h2modalcantsesiones {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-right: -118px;
+    margin-left: -49px;
+}
+
+.h2modalcanthoras {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+.h2modalcoachmonto {
+    font-family: lemon;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 130px;
+}
+
+.modalcoachsesiondes {
+    font-size: 15px;
+    display: inline;
+}
+
+.modalcoachserviciodes {
+    font-size: 15px;
+    display: inline;
+}
+
+.modalpreciodes {
+    font-size: 15px;
+    display: inline;
+    padding: 0px;
+}
+
+.modalcantsesionesdes {
+    font-size: 15px;
+    display: inline;
+    padding-left: 119px;
+}
+
+.modalcanthorasdes {
+    font-size: 15px;
+    display: inline;
+    padding: 0px;
+}
+
+.modalcoachmontodes {
+    font-size: 15px;
+    display: inline;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.modalsoliaceptar {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    margin-right: 280px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .modalsoliaceptar:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 5px;
+        margin-bottom: -20px;
+        margin-right: 280px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.modalsolicancelar {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-right: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .modalsolicancelar:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        margin-right: 70px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.modaltitulosoli {
+    font-family: lemon;
+    color: black;
+    margin-left: 125px;
+    font-size: 25px;
+    margin-bottom: -5px;
+    margin-top: -4px;
+}
+
+.modaltituloinsert {
+    font-family: lemon;
+    color: white;
+    margin-left: 530px;
+    font-size: 25px;
+    margin-bottom: -5px;
+    margin-top: -4px;
+}
+
+.is-required:after {
+    content: '*';
+    margin-left: 3px;
+    color: red;
+    font-weight: bold;
+}
+
+.modalingresardatos {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .modalingresardatos:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.modalingresardatosregresar {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .modalingresardatosregresar:hover {
+        text-decoration: none;
+        background-color: darkcyan;
+        color: white;
+        font-size: 14px;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.btnSiguiente {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .btnSiguiente:hover {
+        text-decoration: none;
+        background-color: turquoise;
+        font-size: 14px;
+        color: white;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.btnSalir {
+    text-decoration: none;
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-style: solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+    .btnSalir:hover {
+        text-decoration: none;
+        background-color: turquoise;
+        font-size: 14px;
+        color: white;
+        font-family: lemon;
+        border-radius: 30px;
+        border-style: solid;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+.botonsolicitar {
+    background-color: darkturquoise;
+    font-size: 14px;
+    color: white;
+    font-family: lemon;
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: lemon;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding-left: 14px;
+    padding-right: 16px;
+}
+
+    .botonsolicitar:hover {
+        background-color: darkcyan;
+        font-size: 14px;
+        color: white;
+        font-family: lemon;
+        border-radius: 30px;
+        border-color: black;
+        border-style: solid;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: -3px;
+        margin-bottom: -3px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-family: lemon;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        padding-left: 14px;
+        padding-right: 16px;
+    }
+
+/*.modal-backdrop {
+    display: none;
+}
+
+.modal {
+    background: rgba(0,0,0,0.5);
+}*/
